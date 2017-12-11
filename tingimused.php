@@ -5,6 +5,7 @@
  * Date: 11.12.2017
  * Time: 11:06
  */
+header('Refresh:5');
 $vanus = rand(0,99);
 
 if($vanus >= 0 and $vanus < 11){
