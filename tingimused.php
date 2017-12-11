@@ -18,4 +18,19 @@ if($vanus >= 0 and $vanus < 11){
         echo 'Oled seenior, kes on ' . $vanus . ' aastat vana.';
 }
 
+
+//katsetame switchi
+$sokolaad = 'Kalev';
+switch ($sokolaad){
+    case 'Kalev':
+        echo 'Super sokolaad';
+        break;
+    case 'Kinder':
+        echo 'Laste lemmik';
+        break;
+    default:
+        echo 'Sobib kui muud pole';
+        break;
+}
+echo '<br>'
 ?>
