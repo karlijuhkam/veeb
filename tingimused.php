@@ -17,20 +17,25 @@ if($vanus >= 0 and $vanus < 11){
 }   else {
         echo 'Oled seenior, kes on ' . $vanus . ' aastat vana.';
 }
-
+echo '<br>';
 
 //katsetame switchi
 $sokolaad = 'Kalev';
 switch ($sokolaad){
     case 'Kalev':
-        echo 'Super sokolaad';
+        echo 'Super Sokolaad.';
         break;
     case 'Kinder':
-        echo 'Laste lemmik';
+        echo 'Laste lemmik.';
         break;
     default:
-        echo 'Sobib kui muud pole';
+        echo 'Sobib kui muud pole.';
         break;
 }
-echo '<br>'
+echo '<br>';
+
+//ternary operaator
+$pidu = 'halb';
+$pidutseme = ($pidu == 'hea') ? 'lähme peole' : 'istume kodus';
+echo $pidutseme;
 ?>
