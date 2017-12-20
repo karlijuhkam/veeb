@@ -15,3 +15,5 @@ for ($kord = 1; $kord <= 5; $kord++){
     echo 'Numbri '.$number.' arvude summa on '.arvuSumma($number).'<br />';
 }
 ?>
+
+
