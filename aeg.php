@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: anna.karutina
- * Date: 8.01.2018
- * Time: 14:51
- */
+
 date_default_timezone_set('Europe/Helsinki');
 echo time().'<br />';
 echo mktime(14, 56, 00, 1, 09, 2018).'<br />';
