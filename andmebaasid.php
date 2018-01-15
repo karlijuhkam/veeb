@@ -6,7 +6,7 @@
  * Time: 13:27
  */
 
-require 'yhendus.php';
+require('yhendus.php');
 
 
 if (!$yhendus){
@@ -26,18 +26,20 @@ if (!$yhendus){
     } else {
         echo 'Andmed on salvestatud';
         $sql = 'SELECT * FROM USERS';
-        if(!$tulemus){
+        if (!$tulemus) {
             echo 'Probleem päringuga <br />';
-            echo mysqli_error($yhendus).'<br />';
-            echo mysqli_errno($yhendus).'<br />';
+            echo mysqli_error($yhendus) . '<br />';
+            echo mysqli_errno($yhendus) . '<br />';
         } else {
-            while($rida = mysqli_fetch_assoc($tulemus)){
-                echo '<table>';
-                    echo '<tr>';
-                        foreach ($rida)
-                    echo '</tr>';
-                echo '</table>';
+            echo '<table border="1">';
+            while ($rida = mysqli_fetch_assoc($tulemus)) {
+                echo '<tr>';
+                foreach ($rida as $element) {
+                    echo '<td>' . $element . '</td>';
+                }
+                echo '</tr>';
             }
+            echo '</table>';
         }
     }
 }
