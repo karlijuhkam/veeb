@@ -24,4 +24,11 @@ class tabel
         $this->veergudeArv = count($pealkirjad);
     }
 
+    function lisaRida($rida){
+        if(count($rida) != $this->veergudeArv){
+            return false;
+        }
+        array_push($this->tabeliSisu, $rida);
+        return true;
+    }
 }
