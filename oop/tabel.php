@@ -31,4 +31,8 @@ class tabel
         array_push($this->tabeliSisu, $rida);
         return true;
     }
+
+    function prindiTabel(){
+
+    }
 }
